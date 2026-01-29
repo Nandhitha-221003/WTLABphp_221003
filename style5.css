@@ -1,0 +1,52 @@
+.main{
+    width:800px;
+    height:230px;
+    background-color: green;
+    padding-left:500px;
+
+}
+.main1{
+    width:770px;
+    height:230px;
+    background-color: green;
+    padding-left:520px;
+
+}
+.a{
+    text-decoration:none;
+    color:black;
+}
+.circle{
+    border-radius:50%;
+}
+.name{
+    color:grey;
+    font-size: 20px;
+}
+.input{
+    color:black;
+    font-size: 20px;
+    margin-top: 3px;
+    
+    
+}
+.lin{
+    background-color: grey;
+    width: 1292px;
+    height: 1px;
+    border-bottom:1.5px black;
+}
+.new{
+   width:150px;
+   height: 40px;
+   background-color: white;
+    border-radius:5px;
+    font-size: 15px;
+   
+   text-align: center;
+   
+}
+.new2{
+    margin-top: 20px;
+    padding-left: 1100px;
+}

@@ -1,0 +1,158 @@
+.image{
+    width:1280px;
+    height:300px;
+    background-color:navajowhite;
+
+}
+.full{
+    width: 1280px;
+    height:1600px;
+}
+.form{
+    width:1280px;
+    height:1350px;
+    background-color:white;
+    margin-top:30px;
+}
+.label{
+    font-size:20px;
+    padding-left:40px;
+}
+.label1{
+    font-size:20px;
+    padding-left:5500px;
+    display:flex;
+}
+.input1{
+    width:1290px;
+    height:40px;
+    padding-left:40px;
+    display:flex;
+    
+    padding-top:10px;
+}
+.input2{
+    width:600px;
+    height:40px;
+    padding-left:40px;
+    border-radius:5px;
+}
+.grey{
+    padding-left:40px;
+    color:grey;
+}
+.sub{
+    display:flex;
+}
+.grey2{
+    padding-left:550px;
+    color:grey;
+}
+
+.grey3{
+    padding-left:560px;
+    
+}
+.grey5{
+    padding-left:560px;
+    font-size:20px;
+}
+.grey6{
+    padding-left:575px;
+    font-size:20px;
+}
+.grey4{
+    padding-left:440px;
+    color:grey;
+}
+.product1{
+    width:600px;
+    height:40px;
+    padding-left:40px;
+}
+.product2{
+    width:400px;
+    height:40px;
+    padding-left:40px;
+}
+.quality{
+    display:flex;
+    margin-top:20px;
+}
+.rating {
+    font-size:25px;
+    color:grey;
+    cursor: pointer;
+    padding-left:40px;
+    display: flex;
+}
+
+.rating i:hover{
+    color:gold;
+}
+
+  .rate{
+    padding-top: 50px;
+  padding-left: 560px;
+}
+.star{
+    width: 1290px;
+    height: 40px;
+   
+    display: flex;
+
+}
+.star1{
+    width:500px;
+    height: 40px;
+    
+    margin-left: 20px;
+}
+.star2{
+    width:500px;
+    height: 40px;
+   
+    margin-left: 130px;
+}
+.star3{
+    width:70px;
+    height: 40px;
+    padding-top: 10px;
+    padding-left: 0px;
+}
+.rad1{
+    padding-left: 40px;
+    font-size: 20px;
+    padding-top: 5px;
+    display: inline;
+
+}
+.rad2{
+    width: 20px;
+    height: 20px;
+    
+}
+.text{
+    padding-left:40px;
+}
+.submi{
+    padding-left:350px;
+     width: 70px;
+    height: 60px;
+    text-align: center;
+     background-color: blue;
+     color:white;
+}
+.submit{
+     text-align:center;
+    align-items: center;
+    width:400px;
+    height:70px;
+    padding-top: 5px;
+    margin-left: 390px;
+    margin-top: 20px;
+    background-color: rgb(34, 21, 209);
+    border-radius:5px;
+    color:white;
+    font-size: 20px;  
+}

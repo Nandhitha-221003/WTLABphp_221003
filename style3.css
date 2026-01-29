@@ -1,0 +1,129 @@
+.first{
+    width:1280px;
+    height:80px;
+    background-color:whitesmoke;
+    position:fixed;
+}
+.name{
+    font-size: 30px;
+    font-style: italic;
+    padding-left: 10px;
+    padding-top: 5px;
+    
+}
+.orders{
+    width:1280px;
+    height:40px;
+    background-color: azure;
+    margin-top: 10px;
+
+}
+.whole{
+    width:1280px;
+    height:800px;
+    display:flex;
+    background-color:white;
+    margin-top: 10px;
+}
+.sidenav{
+    width:270px;
+    height:900px;
+    margin-right:10px;
+    background-color:whitesmoke;
+    position:fixed;
+     margin-top:90px;
+}
+.content{
+    width: 1010px;
+    height:900px;
+    background-color:whitesmoke ;
+    border-radius: 2px;
+    margin-left:280px;
+    margin-top:90px;
+
+}
+.order{
+    margin-top: 30px;
+    width:240px;
+    height:100px;
+    margin-left: 10px;
+    font-size: 20px;
+    font-style: italic;
+    background-color:white ;
+
+}
+.but{
+    width:485px;
+    height:40px;
+    text-align: center;
+    padding-left: 20px;
+    margin-top: 15px;
+    margin-right: 30px;
+    border-radius:5px;
+    background-color: white;
+    font-size: 15px;
+    color:black;
+}
+.a{
+    text-decoration:none;
+    color:black;
+}
+.but2{
+    width:485px;
+    height:40px;
+    text-align: center;
+    padding-left: 20px;
+    margin-top: 15px;
+    border-radius:5px;
+    background-color: white;
+    font-size: 15px;
+    
+    
+
+}
+.account{
+    width:1010px;
+    height:60px;
+    background-color:white;
+    display: flex;
+}
+.name1{
+    height:40px;
+    font-size: 30px;
+    font-style: italic;
+    padding-left: 10px;
+    background-color: white;
+    
+    
+}
+.but3{
+    width:1000px;
+    height:40px;
+    text-align: center;
+    padding-left: 20px;
+    margin-top: 15px;
+    border-radius:5px;
+    background-color: white;
+    font-size: 15px;
+    
+
+}
+.log{
+    text-align:center;
+    align-items: center;
+    width:400px;
+    height:70px;
+    padding-top: 5px;
+    margin-left: 300px;
+    margin-top: 20px;
+    background-color: white;
+    border-radius:5px;
+    color:blue;
+    font-size: 20px;
+}
+.butlink{
+    text-decoration: none;
+    color:black;
+}
+
+

@@ -1,0 +1,17 @@
+.first{
+    width:1290px;
+    height:330px;
+    background-color:white;
+}
+.second{
+    margin-top:20px;
+    width:1290px;
+    height:330px;
+   
+}
+.frame{
+    width:1290px;
+    height: 330px;
+    overflow:hidden;
+    object-fit:cover;
+}
