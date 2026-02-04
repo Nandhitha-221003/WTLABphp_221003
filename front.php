@@ -10,13 +10,25 @@ $message = "";
 
 if ($_SERVER["REQUEST_METHOD"] === "POST") {
 
-    $name  = mysqli_real_escape_string($conn, $_POST['name'] ?? '');
-    $email = mysqli_real_escape_string($conn, $_POST['email'] ?? '');
-    $pass  = mysqli_real_escape_string($conn, $_POST['pass'] ?? '');
+    // Username length validation
+    if (strlen($name) < 4) {
+        $message = "❌ Username should be greater than 4 characters";
+        echo $message;
+        die();
+    }
+    $email = trim($_POST['email'] ?? "");
+    $pass  = trim($_POST['pass'] ?? "");
+
+// clean input
+    $name  = htmlspecialchars(mysqli_real_escape_string($conn, $name));
+    $email = htmlspecialchars(mysqli_real_escape_string($conn, $email));
+    $pass  = addslashes(mysqli_real_escape_string($conn, $pass));
+    $name=strtolower($name);
+    $email=strtolower($email);
 
     $sql = "SELECT * FROM userdetails 
-            WHERE NAME='$name' 
-            AND EMAIL='$email' 
+            WHERE LOWER(NAME)='$name' 
+            AND LOWER(EMAIL)='$email' 
             AND PASS='$pass'";
 
     $result = mysqli_query($conn, $sql);
@@ -26,10 +38,14 @@ if ($_SERVER["REQUEST_METHOD"] === "POST") {
     }
 
     if (mysqli_num_rows($result) > 0) {
+        echo "Login Successful<br>";
+        print "Redirecting...";
         header("Location:index1.html");
+       
         exit();
     } else {
-        $message = "❌ Invalid Details";
+        print "❌ Invalid Details";
+        die();
     }
 }
 ?>
