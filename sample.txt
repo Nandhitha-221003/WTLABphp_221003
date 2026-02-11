@@ -1,0 +1,4 @@
+Hello Satya!
+Welcome to PHP Lab.
+New Line Added
+Locked Writing
