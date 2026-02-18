@@ -10,12 +10,7 @@ $message = "";
 
 if ($_SERVER["REQUEST_METHOD"] === "POST") {
 
-    // Username length validation
-    if (strlen($name) < 4) {
-        $message = "❌ Username should be greater than 4 characters";
-        echo $message;
-        die();
-    }
+    $name=   trim($_POST['name'] ?? "");
     $email = trim($_POST['email'] ?? "");
     $pass  = trim($_POST['pass'] ?? "");
 
@@ -59,15 +54,24 @@ if ($_SERVER["REQUEST_METHOD"] === "POST") {
 
 <form method="POST">
     <label>Name:</label>
-    <input type="text" name="name" required><br><br>
+    <input type="text" name="name" ><br><br>
 
     <label>Email:</label>
-    <input type="email" name="email" required><br><br>
+    <input type="email" name="email" ><br><br>
 
     <label>Password:</label>
-    <input type="password" name="pass" required><br><br>
-
+    <input type="password" name="pass" ><br><br>
+    <a href="google-login.php">
+    <button>Login with Google</button>
+    </a> 
     <button type="submit">Login</button>
 </form>
 </body>
 </html>
+<?php
+session_start();
+
+if (!isset($_SESSION['user_name'])) {
+    die("Invalid details");
+}
+?>

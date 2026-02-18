@@ -49,7 +49,9 @@ if ($_SERVER["REQUEST_METHOD"] === "POST") {
 
     <label>Password:</label>
     <input type="password" name="pass" required><br><br>
-
+    <a href="google-login.php">
+    <button>Login with Google</button>
+    </a>  
     <button type="submit">Login</button>
 </form>
 </body>
