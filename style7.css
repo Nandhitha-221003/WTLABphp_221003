@@ -1,0 +1,91 @@
+.image-container {
+    position: relative;   /* Makes this the reference */
+    width: 500px;         /* Adjust as needed */
+}
+
+.image-container img {
+    width: 1300px;
+    display: block;
+    height: 620px;
+}
+
+.main{
+    position: absolute;   /* Places it ON the image */
+    top: 0;
+    left: 0;
+    width: 400px;
+    height: 400px;
+    background-color: white;
+    margin-top: 170px;
+    margin-left: 50px;
+    border-radius: 25px;
+          /* Optional: to see image behind */
+}
+.back{
+    width: 100px;
+    height: 100px;
+}
+.back1{
+    width: 120px;
+    height: 100px;
+}
+.main1{
+    
+    position: absolute;   /* Places it ON the image */
+    top: 0;
+    left: 0;
+    width: 400px;
+    height: 100px;
+    
+    margin-top: 50px;
+    margin-left: 50px;
+    border-radius: 25px;
+    
+    padding-left: 120px;
+    padding-top: 40px;
+    color:green;
+    align-items: center;
+}
+.name{
+    margin-top: 20px;
+    padding-left: 20px;
+    padding-top: 20px;
+    font-size: 20px;
+}
+.namefield{
+    padding-left: 20px;
+    margin-top: 10px;
+    width:60px;
+    height: 40px;
+    
+}
+.name1{
+    margin-top: 0px;
+    padding-left: 20px;
+    padding-top: 20px;
+    font-size: 20px;
+}
+.create{
+    margin-top: 10px;
+    padding-left: 40px;
+    padding-top: 20px;
+    width:40px;
+    height:40px;
+    font-size: 20px;
+}
+.heading{
+    position: absolute;   /* Places it ON the image */
+    top: 0;
+    left: 0;
+    width: 400px;
+    height: 100px;
+    
+    margin-top: 0px;
+    margin-left: 50px;
+    border-radius: 25px;
+    
+    padding-left: 500px;
+    padding-top: 10px;
+    color:black;
+    align-items: center;
+}

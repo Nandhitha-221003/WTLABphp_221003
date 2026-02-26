@@ -1,27 +1,48 @@
 <?php
 session_start();
-require 'vendor/autoload.php';
 
-$dotenv = Dotenv\Dotenv::createImmutable(__DIR__);
-$dotenv->load();
+require 'vendor/autoload.php';
+require 'config/db.php';
 
 $client = new Google_Client();
-$client->setClientId($_ENV['GOOGLE_CLIENT_ID']);
-$client->setClientSecret($_ENV['GOOGLE_CLIENT_SECRET']);
-$client->setRedirectUri($_ENV['GOOGLE_REDIRECT_URI']);
-
+$client->setClientId($env['GOOGLE_CLIENT_ID']);
+$client->setClientSecret($env['GOOGLE_CLIENT_SECRET']);
+$client->setRedirectUri($env['GOOGLE_REDIRECT_URI']);
 if (isset($_GET['code'])) {
 
     $token = $client->fetchAccessTokenWithAuthCode($_GET['code']);
+
+    if (isset($token['error'])) {
+        die("Error fetching token");
+    }
+
     $client->setAccessToken($token);
 
-    $oauth = new Google_Service_Oauth2($client);
-    $user = $oauth->userinfo->get();
+    $google_oauth = new Google_Service_Oauth2($client);
+    $google_account_info = $google_oauth->userinfo->get();
 
-    // Store user info in session
-    $_SESSION['user_name'] = $user->name;
-    $_SESSION['user_email'] = $user->email;
+    $email = $google_account_info->email;
+    $name  = $google_account_info->name;
 
-    header("Location: front.php");
+    // Check if user exists in MongoDB
+    $existingUser = $users->findOne(['email' => $email]);
+
+    if (!$existingUser) {
+        $users->insertOne([
+            'email' => $email,
+            'name' => $name,
+            'createdAt' => new MongoDB\BSON\UTCDateTime()
+        ]);
+    }
+
+    // 🔥 SET SESSION
+    $_SESSION['user'] = $email;
+
+    // Redirect to dashboard
+    header("Location: dashboard.php");
     exit();
 }
+
+// If no code present
+header("Location: login.php");
+exit();

@@ -23,18 +23,18 @@
                     <button type="button" class="upload1" ><a href="http://localhost/php_grammart/index.php" ><i class="fa-regular fa-camera"></i></a></button> 
                 </div>
                 <audio  id="searchAudio" >
-                        <source src="C:\Users\NANDHU\Desktop\Website\search2.mp3.mpeg" type="audio/mpeg">
+                        <source src="search2.mpeg" type="audio/mpeg">
                 </audio>
             </div>
             <div class="vid">
                  <video autoplay loop muted class="vid2">
-                            <source src="C:\Users\NANDHU\Desktop\Website\video2.mp4">
+                            <source src="video2.mp4">
                  </video>
             </div>
             <p class="hot">Hot Deals</p>
             <div class="big">
                 <div class="first">
-                    <img src="C:\Users\NANDHU\Desktop\Website\pears.jpeg" alt="soap" class="soap">
+                    <img src="pears.jpeg" alt="soap" class="soap">
                    <div class="products" >
                      <p >Soaps</p>
                    </div>
@@ -50,7 +50,7 @@
                 
                 
                 <div class="first">
-                    <img src="C:\Users\NANDHU\Desktop\Website\bucket.jpg.jpeg" alt="soap" class="soap">
+                    <img src="bucket.jpeg" alt="soap" class="soap">
                     <div class="products" >
                      <p >Buckets</p>
                    </div>
@@ -63,7 +63,7 @@
                     </div>
                 </div>
                 <div class="first">
-                    <img src="C:\Users\NANDHU\Desktop\Website\slippers.jpg.jpeg" alt="soap" class="soap">
+                    <img src="slippers.jpeg" alt="soap" class="soap">
                     <div class="products" >
                      <p >Filp Flops</p>
                    </div>
@@ -76,7 +76,7 @@
                     </div>
                 </div>
                 <div class="first">
-                    <img src="C:\Users\NANDHU\Desktop\Website\chairs.jpg.jpeg" alt="soap" class="soap">
+                    <img src="chairs.jpeg" alt="soap" class="soap">
                     <div class="products" >
                      <p >Chairs</p>
                    </div>
@@ -90,7 +90,7 @@
                 </div>
                 
                 <div class="first">
-                    <img src="C:\Users\NANDHU\Desktop\Website\pillows.jpg.jpeg" alt="soap" class="soap">
+                    <img src="pillows.jpeg" alt="soap" class="soap">
                     <div class="products" >
                      <p >Pillows</p>
                    </div>
@@ -103,7 +103,7 @@
                     </div>
                 </div>
                 <div class="first">
-                    <img src="C:\Users\NANDHU\Desktop\Website\hairdryer.jpeg" alt="soap" class="soap">
+                    <img src="hairdryer.jpeg" alt="soap" class="soap">
                     <div class="products" >
                      <p >Hair Dryer</p>
                    </div>
@@ -116,7 +116,7 @@
                     </div>
                 </div>
                 <div class="first">
-                    <img src="C:\Users\NANDHU\Desktop\Website\lock.jpeg" alt="soap" class="soap">
+                    <img src="lock.jpeg" alt="soap" class="soap">
                     <div class="products" >
                      <p >Locks</p>
                    </div>
@@ -132,7 +132,7 @@
             <p class="hot" >Groceries For You</p>
             <div class="big">
                 <div class="first">
-                    <img src="C:\Users\NANDHU\Desktop\Website\rice.jpeg" alt="soap" class="soap">
+                    <img src="rice.jpeg" alt="soap" class="soap">
                     <div class="products" >
                      <p >Rice</p>
                    </div>
@@ -146,7 +146,7 @@
                 </div>
                 
                 <div class="first">
-                    <img src="C:\Users\NANDHU\Desktop\Website\oil.jpeg" alt="soap" class="soap">
+                    <img src="oil.jpeg" alt="soap" class="soap">
                     <div class="products" >
                      <p >Oil</p>
                    </div>
@@ -159,7 +159,7 @@
                     </div>
                 </div>
                 <div class="first">
-                    <img src="C:\Users\NANDHU\Desktop\Website\dal.jpeg" alt="soap" class="soap">
+                    <img src="dal.jpeg" alt="soap" class="soap">
                     <div class="products" >
                      <p >Dals</p>
                    </div>
@@ -172,7 +172,7 @@
                     </div>
                 </div>
                 <div class="first">
-                    <img src="C:\Users\NANDHU\Desktop\Website\salt.jpeg" alt="soap" class="soap">
+                    <img src="salt.jpeg" alt="soap" class="soap">
                     <div class="products" >
                      <p >Rock Salt</p>
                    </div>
@@ -185,7 +185,7 @@
                     </div>
                 </div>
                 <div class="first">
-                    <img src="C:\Users\NANDHU\Desktop\Website\veg.jpeg" alt="soap" class="soap">
+                    <img src="veg.jpeg" alt="soap" class="soap">
                    <div class="products" >
                      <p >Vegetables</p>
                    </div>
@@ -198,7 +198,7 @@
                     </div>
                 </div>
                 <div class="first">
-                    <img src="C:\Users\NANDHU\Desktop\Website\fruits.jpeg" alt="soap" class="soap">
+                    <img src="fruits.jpeg" alt="soap" class="soap">
                     <div class="products" >
                      <p >Fruits</p>
                    </div>
@@ -211,7 +211,7 @@
                     </div>
                 </div>
                 <div class="first">
-                    <img src="C:\Users\NANDHU\Desktop\Website\milk.jpeg" alt="soap" class="soap">
+                    <img src="milk.jpeg" alt="soap" class="soap">
                     <div class="products" >
                      <p >Milk</p>
                    </div>
@@ -227,7 +227,7 @@
             <p class="hot">Snacks&Items</p>
             <div class="big">
                 <div class="first">
-                    <img src="C:\Users\NANDHU\Desktop\Website\chocolate.jpeg" alt="soap" class="soap">
+                    <img src="chocolate.jpeg" alt="soap" class="soap">
                     <div class="products" >
                      <p >Chocolates</p>
                    </div>
@@ -241,7 +241,7 @@
                 </div>
                 
                 <div class="first">
-                    <img src="C:\Users\NANDHU\Desktop\Website\bingo.jpeg" alt="soap" class="soap">
+                    <img src="bingo.jpeg" alt="soap" class="soap">
                     <div class="products" >
                      <p >Bingo</p>
                    </div>
@@ -254,7 +254,7 @@
                     </div>
                 </div>
                 <div class="first">
-                    <img src="C:\Users\NANDHU\Desktop\Website\lays.jpeg" alt="soap" class="soap">
+                    <img src="lays.jpeg" alt="soap" class="soap">
                     <div class="products" >
                      <p >Lays</p>
                    </div>
@@ -267,7 +267,7 @@
                     </div>
                 </div>
                 <div class="first">
-                    <img src="C:\Users\NANDHU\Desktop\Website\biscuit.jpeg" alt="soap" class="soap">
+                    <img src="biscuit.jpeg" alt="soap" class="soap">
                     <div class="products" >
                      <p >Biscuits</p>
                    </div>
@@ -280,7 +280,7 @@
                     </div>
                 </div>
                 <div class="first">
-                    <img src="C:\Users\NANDHU\Desktop\Website\haldiram.jpeg" alt="soap" class="soap">
+                    <img src="haldiram.jpeg" alt="soap" class="soap">
                    <div class="products" >
                      <p >Haldirams</p>
                    </div>
@@ -293,7 +293,7 @@
                     </div>
                 </div>
                 <div class="first">
-                    <img src="C:\Users\NANDHU\Desktop\Website\knorr.jpeg" alt="soap" class="soap">
+                    <img src="knorr.jpeg" alt="soap" class="soap">
                     <div class="products" >
                      <p >Knorr Soups</p>
                    </div>
@@ -306,7 +306,7 @@
                     </div>
                 </div>
                 <div class="first">
-                    <img src="C:\Users\NANDHU\Desktop\Website\pasta.jpeg" alt="soap" class="soap">
+                    <img src="pasta.jpeg" alt="soap" class="soap">
                     <div class="products" >
                      <p >Pasta</p>
                    </div>

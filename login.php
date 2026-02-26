@@ -1,58 +1,58 @@
+
 <?php
-error_reporting(E_ALL);
-ini_set('display_errors', 1);
-$conn = mysqli_connect("localhost", "testuser", "test123");
-if (!$conn) {
-    die("Database connection failed: " . mysqli_connect_error());
-}
+session_start();
+require __DIR__ . '/config/db.php';
 
-$message = "";
+if ($_SERVER["REQUEST_METHOD"] == "POST") {
 
-if ($_SERVER["REQUEST_METHOD"] === "POST") {
+    $email = $_POST['e'] ?? '';
+    $password = $_POST['p'] ?? '';
 
-    $name  = mysqli_real_escape_string($conn, $_POST['name'] ?? '');
-    $email = mysqli_real_escape_string($conn, $_POST['email'] ?? '');
-    $pass  = mysqli_real_escape_string($conn, $_POST['pass'] ?? '');
+    $user = $users->findOne(['email' => $email]);
 
-    $sql = "SELECT * FROM details 
-            WHERE NAME='$name' 
-            AND EMAIL='$email' 
-            AND PASS='$pass'";
-
-    $result = mysqli_query($conn, $sql);
-
-    if (!$result) {
-        die("Query failed: " . mysqli_error($conn));
+    if (!$user) {
+        die("User not found");
     }
 
-    if (mysqli_num_rows($result) > 0) {
-        $message = "✅ Login Successful";
-    } else {
-        $message = "❌ Invalid Details";
+    if (!password_verify($password, $user['password'])) {
+        die("Invalid password");
     }
+
+    $_SESSION['user'] = $user['email'];
+    header("Location: dashboard.php");
+    exit;
 }
 ?>
 <!DOCTYPE html>
 <html>
 <head>
     <title>Login</title>
+           <link rel="stylesheet" href="style7.css">
 </head>
 <body>
-<h2><?php echo $message; ?></h2>
 
-<form method="POST">
-    <label>Name:</label>
-    <input type="text" name="name" required><br><br>
 
-    <label>Email:</label>
-    <input type="email" name="email" required><br><br>
+ <div class="image-container">
+            <div class="heading"><h1 >GRAMMART</h1></div>
+            <img class="back1" src="background.jpg" alt="background">
+            <div class="main1"><h1 >LOGIN</h1></div>
+            <div class="main">
+                <form  method="post">
+                   <div class="name"> Name</div>
+                    <div class="namefield"><input type="text" name="n" style="width:350px; height:40px; border-radius: 5px;border-color:green;"></div>
+                    <div class="name1">Email</div>
+                    <div class="namefield"><input type="email" name="e" style="width:350px; height:40px; border-radius: 5px;border-color:green;"></div>
+                    <div class="name1">Password</div>
+                    <div class="namefield"><input type="password" name="p" style="width:350px; height:40px; border-radius: 5px;border-color:green;"></div>
+                    <div class="create"><input type="submit" value="LOGIN" name="c" style="width:300px; height:40px; border-radius: 10px;border-color:green;color:white;background-color: green;font-size: 15px;" ></div>
+                    
+                </form>
+            </div>
+        </div>
+    </div>
 
-    <label>Password:</label>
-    <input type="password" name="pass" required><br><br>
-    <a href="google-login.php">
-    <button>Login with Google</button>
-    </a>  
-    <button type="submit">Login</button>
-</form>
+
+
 </body>
 </html>
+
