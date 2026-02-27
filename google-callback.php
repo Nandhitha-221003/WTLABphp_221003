@@ -41,7 +41,7 @@ if (isset($_GET['code'])) {
     // Redirect to dashboard
     header("Location: dashboard.php");
     exit();
-}
+
 
 // If no code present
 header("Location: login.php");
